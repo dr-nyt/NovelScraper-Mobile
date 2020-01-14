@@ -15,6 +15,7 @@
   "dependencies": {
     "cloudscraper": "^4.5.0",
     "cordova-android": "^8.1.0",
+    "cordova-plugin-file": "^6.0.2",
     "request": "^2.88.0"
   },
   "devDependencies": {
@@ -22,7 +23,8 @@
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-file": {}
     },
     "platforms": [
       "android"

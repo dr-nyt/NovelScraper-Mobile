@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.hana.drnyt.novelscraper"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.hana.drnyt.novelscraper"
     }
   },
   "dependent_plugins": {}
