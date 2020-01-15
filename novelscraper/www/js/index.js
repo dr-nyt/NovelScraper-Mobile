@@ -14,21 +14,8 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        console.log(getNovelFromLibrary('novelLink'));
+        
     }
 };
 
 app.initialize();
-
-function testWebScrape() {
-    var XMLReq = new XMLHttpRequest();
-
-    XMLReq.open( "GET", "https://boxnovel.com/", true)
-    XMLReq.onreadystatechange = function() {
-        if(XMLReq.readyState == 4 && XMLReq.status == 200) {
-            var html = new DOMParser().parseFromString(XMLReq.responseText, 'text/html');
-            // console.log(html.getElementsByClassName('col-xs-12 col-md-6')[0].innerHTML);
-        }
-    }
-    XMLReq.send();
-}

@@ -1,10 +1,22 @@
+//Library Storage System
 const libraryStorage = window.localStorage;
-const _novelName = 0;
 
-function saveNovelToLibrary(novelLink, novelName) {
-    libraryStorage.setItem(novelLink, [novelName]);
+//Library Array Index
+const _novelName = 0;
+const _latestChapterName = 1;
+const _novelCoverSrc = 2;
+const _totalChapters = 3;
+const _source = 4;
+const _downloadStatus = 5;
+const _downloaded = 6;
+
+
+//Save the novel data to the library system with novel-link as unique ID and the remaining parameters as values
+function saveNovelToLibrary(novelLink, novelName, latestChapterName, novelCoverSrc, totalChapters, source, downloadStatus, downloaded) {
+    libraryStorage.setItem(novelLink, [novelName, latestChapterName, novelCoverSrc, totalChapters, source, downloadStatus, downloaded]);
 }
 
+//Returns an array of novel data
 function getNovelFromLibrary(novelLink) {
     let novel = libraryStorage.getItem(novelLink);
     if(novel) {
