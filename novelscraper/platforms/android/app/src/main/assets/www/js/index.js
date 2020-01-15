@@ -14,7 +14,8 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        console.log(_novelName);
+        // Initialize App functions here
+        
     }
 };
 

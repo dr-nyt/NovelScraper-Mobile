@@ -1,8 +1,8 @@
 {
   "name": "com.hana.drnyt.novelscraper",
   "displayName": "NovelScraper",
-  "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "version": "0.0.1",
+  "description": "Mobile port for dr_nyt's NovelScraper App.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
