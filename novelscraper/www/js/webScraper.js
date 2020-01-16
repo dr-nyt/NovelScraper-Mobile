@@ -7,6 +7,6 @@ function webScraper(link, callback) {
             html = new DOMParser().parseFromString(XMLReq.responseText, 'text/html');
             callback(html);
         }
-    }
+    };
     XMLReq.send();
 }
